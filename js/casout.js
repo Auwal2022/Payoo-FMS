@@ -2,10 +2,10 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
     event.preventDefault();
 
     // Get the new input amount.........
-    const inputNewAmount = document.getElementById('input-add-money').value;
+    const inputNewAmount = document.getElementById('input-cash-out-money').value;
 
     // Get the Pin number.........
-    const inputPinNumber = document.getElementById('input-pin-number').value;
+    const inputPinNumber = document.getElementById('input-cash-out-pin-number').value;
 
     // verify the pin number to add money
     if(inputPinNumber === '444'){
