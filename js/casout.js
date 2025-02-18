@@ -1,4 +1,4 @@
-document.getElementById('btn-add-money').addEventListener('click', function(event){
+document.getElementById('cash-out-btn').addEventListener('click', function(event){
     event.preventDefault();
 
     // Get the new input amount.........
@@ -16,7 +16,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         const addMoneyNumber = parseFloat(inputNewAmount);
         const balanceNumber = parseFloat(accountBalance);
 
-        const newBalance = addMoneyNumber + balanceNumber;
+        const newBalance = balanceNumber - addMoneyNumber;
         console.log(newBalance);
 
         // update the new balance in UI.......
