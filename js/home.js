@@ -1,5 +1,5 @@
 
-document.getElementById('btn-add-money').addEventListener('click', function(event){
+document.getElementById('btn-add-money').addEventListener('click', function (event) {
     event.preventDefault();
 
     // Get the new input amount.........
@@ -9,7 +9,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     const inputPinNumber = document.getElementById('input-pin-number').value;
 
     // verify the pin number to add money
-    if(inputPinNumber === '444'){
+    if (inputPinNumber === '444') {
         // get the current balance...
         const accountBalance = document.getElementById('account-balance').innerText;
 
@@ -24,7 +24,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         document.getElementById('account-balance').innerText = newBalance;
 
     }
-    else{
+    else {
         alert('Wrong Pin Number');
     }
 })
